@@ -1,0 +1,5 @@
+Java implementation for Public API of http://www.namecheap.com/. Initial version contains only main operations:
+- get domains list
+- check domain (is free for registration)
+- add domain (with records)
+- update domain records
