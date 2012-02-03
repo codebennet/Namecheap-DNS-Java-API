@@ -3,3 +3,7 @@ Java implementation for Public API of http://www.namecheap.com/. Initial version
 - check domain (is free for registration)
 - add domain (with records)
 - update domain records
+- get provider TLDs list
+- renew domain for number of years
+- reactivate domain
+- lock/unlock domain
