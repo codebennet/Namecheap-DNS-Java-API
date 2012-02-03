@@ -1,9 +1,14 @@
 Java implementation for Public API of http://www.namecheap.com/. Initial version contains only main operations:
 - get domains list
-- check domain (is free for registration)
+- check domain (is it free for registration)
 - add domain (with records)
 - update domain records
 - get provider TLDs list
 - renew domain for number of years
 - reactivate domain
 - lock/unlock domain
+
+/jar direcory contains jar and properties file. This file must be filled with appropriate settings from http://www.namecheap.com/ user account api acces section, and added to classpath for production.
+
+Some operations depends on domains from your account (ie. "renew domain", "lock domain", etc.) and therefore unit tests may fail by default. So it's recommended to build project skipping them:
+mvn package -Dmaven.test.skip=true
