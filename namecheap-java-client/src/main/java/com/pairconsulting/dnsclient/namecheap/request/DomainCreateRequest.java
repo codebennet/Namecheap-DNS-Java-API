@@ -91,8 +91,9 @@ public class DomainCreateRequest extends DNSBaseRequest{
         if (dls[dls.length-1].equals("ca")) {
             addParam(new BasicNameValuePair("CIRAAgreementVersion", "2.0"));
             addParam(new BasicNameValuePair("CIRAAgreementValue", "Y"));
-            addParam(new BasicNameValuePair("CIRAType", properties.getProperty("CIRAType")));
+            addParam(new BasicNameValuePair("CIRALegalType", properties.getProperty("CIRALegalType")));
             addParam(new BasicNameValuePair("CIRAWhoisDisplay", properties.getProperty("CIRAWhoisDisplay")));
+            addParam(new BasicNameValuePair("CIRALanguage", properties.getProperty("CIRALanguage")));
         }
     }
 
